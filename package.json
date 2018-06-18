@@ -1,0 +1,32 @@
+{
+  "name": "supertestpoc",
+  "version": "1.0.0",
+  "description": "a simple example of supertest",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "start:dev": "npm run lint &&DEBUG=server:* nodemon index.js",
+    "start": "node index.js",
+    "test": "DEBUG=server:* ava testing/ --vervose"
+  },
+  "keywords": [
+    "express",
+    "supertest",
+    "testing"
+  ],
+  "author": "guillermo.llancaqueo@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nodemon": "^1.17.5",
+    "proxyquire": "^2.0.1",
+    "sinon": "^6.0.0",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "supertest": "^3.1.0"
+  }
+}
